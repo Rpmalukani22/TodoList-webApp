@@ -3,3 +3,7 @@
 	width: 360px;
 	margin: 0 auto;
 }
+.checkit{
+	color: grey;
+	text-decoration: line-through;
+}
