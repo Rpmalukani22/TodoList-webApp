@@ -15,6 +15,10 @@ if(event.which===13){//Enter key pressed!
 	//Clear the input box
 	$(this).val("");
 	//append the new data
-	$("ul").append("<li><span>X</span> " + Todotxt + "</li>");
+	$("ul").append('<li><span><i class="fa fa-trash-o" aria-hidden="true"></i></span>' + Todotxt + "</li>");
 }
+});
+$('input[type="text"]').css('display','none');
+$('i').first().click(function(){
+$('input[type="text"]').fadeToggle(500);
 });
